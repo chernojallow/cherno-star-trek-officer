@@ -1,4 +1,4 @@
-package com.galvanize.chernofficers;
+package com.galvanize;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
