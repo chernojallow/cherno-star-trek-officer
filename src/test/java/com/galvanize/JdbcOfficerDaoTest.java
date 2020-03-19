@@ -22,7 +22,7 @@ public class JdbcOfficerDaoTest {
 
     @Test
     void countOfficersTest(){
-      int count = jdbcOfficerDao.countOfficer();
+      int count = jdbcOfficerDao.count();
       assertEquals(5, count);
     }
 

@@ -1,15 +1,27 @@
 package com.galvanize.entities;
 
+import javax.persistence.*;
 
+@Entity
+@Table(name = "OFFICERS");
 public class Officer{
-    Long id;
-            Rank rank;
-            String first;
-            String last;
+
+        @Id
+        @GeneratedValue(strategy= GenerationType.IDENTITY)
+         Long id;
+       @Column(name="officer_rank");
+        @Enumerated(EnumType.STRING);
+        Rank rank;
+        @Column(name ="first_name");
+        String first;
+        @Column(name = "last_name");
+        String last;
 
 
 
-public Officer (){};
+public Officer (){
+
+};
 
 
 public Officer(Rank rank, String first, String last){

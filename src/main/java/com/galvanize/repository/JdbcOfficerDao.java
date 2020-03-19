@@ -37,7 +37,7 @@ public class JdbcOfficerDao {
     }
 
 
-    public int countOfficer() {
+    public int count() {
         return jdbcTemplate.queryForObject("select count(*)from OFFICERS ", Integer.class);
     }
 
